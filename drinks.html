@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Island Fry - Drinks</title>
+    <link rel="stylesheet" href="css/drinks.css">
+</head>
+<body>
+
+<header>
+    <h2>Drinks</h2>
+    <button class="cart-btn" onclick="toggleCart()">
+        Cart (<span id="cartCount">0</span>)
+    </button>
+</header>
+
+<div class="shop">
+    <div class="item">
+        <img src="images/Alouda.jpg" alt="">
+        <h4>Rs 50</h4>
+        <h3>Alouda</h3>
+        <button onclick="addToCart('Alouda', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Dille Caille.jpg" alt="">
+        <h4>Rs 25</h4>
+        <h3>Dile Caillé</h3>
+        <button onclick="addToCart('Dile Caillé', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/JusTamarin.jpg" alt="">
+        <h4>Rs 30</h4>
+        <h3>Jus Tamarin</h3>
+        <button onclick="addToCart('Jus Tamarin', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/JusPamplemous.jpg" alt="">
+        <h4>Rs 30</h4>
+        <h3>Jus Pamplemousse</h3>
+        <button onclick="addToCart('Jus Pamplemousse', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/JusMandarin.jpeg" alt="">
+        <h4>Rs 35</h4>
+        <h3>Jus Mandarine</h3>
+        <button onclick="addToCart('Jus Mandarine', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/JusLimon.avif" alt="">
+        <h4>Rs 30</h4>
+        <h3>Jus Limon</h3>
+        <button onclick="addToCart('Jus Limon', 1)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="cart" id="cart">
+    <button class="close-cart" onclick="toggleCart()">Close</button>
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <hr>
+    <h3>Total: $<span id="totalPrice">0</span></h3>
+
+    <button class="pay-btn" onclick="payNow()">Pay Now</button>
+    <p id="paymentMessage"></p>
+</div>
+
+
+<script src="js/drinks.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Island Fry - Snacks - Salty</title>
+    <link rel="stylesheet" href="css/snacks-salty.css">
+</head>
+<body>
+
+<header>
+    <h2>Snacks - Salty</h2>
+    <button class="cart-btn" onclick="toggleCart()">
+        Cart (<span id="cartCount">0</span>)
+    </button>
+</header>
+
+<div class="shop">
+    <div class="item">
+        <img src="images/Roti.jpg" alt="Roti Image">
+        <h4>Rs 25</h4>
+        <h3>Roti</h3>
+        <button onclick="addToCart('Roti', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Baja.jpeg" alt="">
+        <h4>Rs 15</h4>
+        <h3>Baja</h3>
+        <button onclick="addToCart('Baja', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/GatoBrinzel.jpg" alt="">
+        <h4>Rs 17</h4>
+        <h3>Gato Brinzel</h3>
+        <button onclick="addToCart('Gato Brinzel', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/GatoPomdeter.jpg" alt="">
+        <h4>Rs 10</h4>
+        <h3>Gato Pomdeter</h3>
+        <button onclick="addToCart('Gato Pomdeter', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Samousa.jpg" alt="">
+        <h4>Rs 10</h4>
+        <h3>Samoussa</h3>
+        <button onclick="addToCart('Samoussa', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Island Fry slide2.jpg" alt="">
+        <h4>Rs 20</h4>
+        <h3>Arouille</h3>
+        <button onclick="addToCart('Arouille', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Chanapuri.jpg" alt="">
+        <h4>Rs 20</h4>
+        <h3>Chanapuri</h3>
+        <button onclick="addToCart('Chanapuri', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/DhallPuri.jpg" alt="">
+        <h4>Rs 25</h4>
+        <h3>Dhall Puri</h3>
+        <button onclick="addToCart('Dhall Puri', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Gatopima.jpg" alt="">
+        <h4>Rs 5</h4>
+        <h3>Gato Pima</h3>
+        <button onclick="addToCart('Gato Pima', 1)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="cart" id="cart">
+    <button class="close-cart" onclick="toggleCart()">Close</button>
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <hr>
+    <h3>Total: $<span id="totalPrice">0</span></h3>
+
+    <button class="pay-btn" onclick="payNow()">Pay Now</button>
+    <p id="paymentMessage"></p>
+</div>
+
+
+<script src="js/menu.js"></script>
+</body>
+</html>

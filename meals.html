@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Island Fry - Meals</title>
+    <link rel="stylesheet" href="css/meals.css">
+</head>
+<body>
+
+<header>
+    <h2>Meals</h2>
+    <button class="cart-btn" onclick="toggleCart()">
+        Cart (<span id="cartCount">0</span>)
+    </button>
+</header>
+
+<div class="shop">
+    <div class="item">
+        <img src="images/Daily Combo.jpg" alt="">
+        <h4>Rs 115</h4>
+        <h3>Donn le zafer - Daily Combo</h3>
+        <button onclick="addToCart('Donn le zafer - Daily Combo', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Hot Pick.webp" alt="">
+        <h4>Rs 125</h4>
+        <h3>The Hot Pick - Discount Offer</h3>
+        <button onclick="addToCart('The Hot Pick - Discount Offer', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Sweetest.webp" alt="">
+        <h4>Rs 150</h4>
+        <h3>The Sweetest one - The Normal</h3>
+        <button onclick="addToCart('The Sweetest one - The Normal', 1)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="images/Sweater.jpg" alt="">
+        <h4>Rs 125</h4>
+        <h3>The Sweater One - Spicy</h3>
+        <button onclick="addToCart('The Sweater One - Spicy', 1)">Add to Cart</button>
+    </div>
+</div>
+
+<div class="cart" id="cart">
+    <button class="close-cart" onclick="toggleCart()">Close</button>
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <hr>
+    <h3>Total: $<span id="totalPrice">0</span></h3>
+
+    <button class="pay-btn" onclick="payNow()">Pay Now</button>
+    <p id="paymentMessage"></p>
+</div>
+
+
+<script src="js/menu.js"></script>
+</body>
+</html>
